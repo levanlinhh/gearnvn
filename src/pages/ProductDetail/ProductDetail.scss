@@ -1,0 +1,154 @@
+.Product__detail {
+  .Product__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Product__info {
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+
+      .Product__rating {
+        margin-bottom: 10px;
+
+        span {
+          i {
+            color: orange;
+          }
+        }
+
+        p {
+          span {
+            color: orange;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .price {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .category {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      .buy__btn {
+        padding: 8px 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: red;
+        color: #fff;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .tab__wrapper {
+    h6 {
+      cursor: pointer;
+      color: var(--primary-color);
+      font-size: 1rem;
+      font-weight: 500;
+      border-bottom: 1px solid var(--primary-color);
+      padding: 8px 20px;
+    }
+    .tab__active {
+      color: rgb(240, 52, 6);
+      border-bottom: 1px solid rgb(240, 52, 6);
+    }
+  }
+
+  .tab__content {
+    line-height: 30px;
+  }
+
+  .product__review {
+    .review__wrapper {
+      li {
+        margin-bottom: 10px;
+      }
+      li > span {
+        color: coral;
+        font-weight: 500;
+      }
+
+      li > p {
+        margin-top: 10px;
+      }
+
+      .review__form {
+        margin: auto;
+        width: 70%;
+        margin-top: 50px;
+
+        h5 {
+          font-size: 1.2;
+          font-size: 600;
+          margin-bottom: 30px;
+        }
+
+        .form__group {
+          width: 100%;
+          margin-bottom: 10px;
+          display: flex;
+          gap: 10px;
+
+          input,
+          textarea {
+            width: 100%;
+            border: 1px solid var(--primary-color);
+            padding: 8px 20px;
+            border-radius: 5px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            color: coral;
+            cursor: pointer;
+          }
+        }
+
+        .btn__send {
+          padding: 8px 10px;
+          border: none;
+          outline: none;
+          color: #fff;
+          background: rgb(255,0,0);
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .related__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Product__detail {
+    .product__review {
+      .review__wrapper {
+        .review__form {
+          width: 100%;
+        }
+      }
+    }
+    .related__title {
+      font-size: 1.4rem;
+    }
+  }
+}

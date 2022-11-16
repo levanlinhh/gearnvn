@@ -1,0 +1,60 @@
+.Cart {
+  .table {
+    .image {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .time {
+      color: rgb(85, 81, 81);
+      font-size: 14px;
+    }
+
+    thead {
+      th {
+        font-weight: 600;
+      }
+    }
+
+    th {
+      font-weight: 500;
+      color: var(--primary-color);
+
+      .icon {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+
+        cursor: pointer;
+      }
+      .delete {
+        cursor: pointer;
+      }
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .shop__btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    a {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .box__checkout {
+    padding: 10px 20px;
+    box-shadow: 3px 3px 10px 0px #ddd;
+  }
+}

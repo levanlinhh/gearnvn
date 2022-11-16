@@ -1,0 +1,60 @@
+.Login {
+  .login__box {
+    gap: 20px;
+    padding: 30px 20px;
+    background: var(--primary-color);
+    margin-top: 12px;
+    border-radius: 5px;
+
+    .form__group {
+      width: 100%;
+      margin-bottom: 10px;
+      input {
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        outline: none;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 12px
+      }
+      .input-errors {
+        border: 1px solid red;
+      }
+    }
+
+    .ImgUser {
+      color: white;
+      display: flex;
+    }
+
+    .errors {
+      color: red;
+      font-size: 0.7rem;
+    }
+
+    .login__btn {
+      padding: 8px 20px;
+      border: none;
+      outline: none;
+      background: #fff;
+      color: var(--primary-color);
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #fff;
+      font-size: 0.9rem;
+
+      a {
+        color: orange;
+        text-decoration: underline;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.filter__widget {
+  margin-bottom: 10px;
+  select {
+    padding: 8px 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none !important;
+    }
+
+    option {
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.search__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  padding: 7px 10px;
+  border-radius: 5px;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-color);
+  }
+
+  input {
+    margin-left: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    margin-right: 10px;
+  }
+}

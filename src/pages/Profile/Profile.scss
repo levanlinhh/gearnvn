@@ -1,0 +1,89 @@
+.profile {
+  h4 {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      padding: 4px 0;
+
+      span {
+        font-weight: 500;
+      }
+
+      input {
+        padding: 4px 10px;
+      }
+    }
+
+    .button {
+      align-self: flex-end;
+      margin-top: 20px;
+      padding: 8px 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+      background-color: rgb(255,0,0);
+      box-shadow: 3px 3px 10px 2px #ddd;
+    }
+
+  }
+
+  .box-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: orange;
+    }
+
+    .imageUser {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 100%;
+      margin-bottom: 20px;
+    }
+
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      font-size: 12px;
+      font-weight: 500;
+      background-color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

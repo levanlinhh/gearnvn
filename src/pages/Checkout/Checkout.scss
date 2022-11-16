@@ -1,0 +1,73 @@
+.checkout {
+  h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .form__group {
+    width: 100%;
+
+    margin-top: 10px;
+    display: flex;
+
+    .title {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .checkout__cart {
+    padding: 15px;
+    color: #333;
+    background: rgb(214,229,251);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .total {
+      padding: 10px 0;
+      font-size: 1.2rem;
+      border-top: 1px solid #fff;
+      font-weight: 500;
+
+      h6 {
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .buy__btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(255,0,0);
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    &:hover {
+      box-shadow: 3px 3px 8px 2px #ccc;
+    }
+  }
+}

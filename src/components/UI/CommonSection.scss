@@ -1,0 +1,41 @@
+.common__section {
+  background: linear-gradient(),
+    url("../UI/CommonSection.jsx") no-repeat center center;
+    
+
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  h1 {
+    font-weight: 500;
+    color: #333;
+  }
+  .buy__btn {
+    color: #fff;
+    background-color: rgb(255,0,0);
+    border-color: rgb(255,0,0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.0rem;
+    font-weight: 500;
+    padding: 3px 15px 3px 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn__buy:hover {
+    border-color: #c0c0c0;
+    background-color: #c0c0c0;
+}
+}
+
+@media screen and (max-width: 678px) {
+  .common__section {
+    padding: 60px 0;
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+}
